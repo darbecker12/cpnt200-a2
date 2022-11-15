@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popular_photos",
+  "info": {
+    "singularName": "popular-photo",
+    "pluralName": "popular-photos",
+    "displayName": "Popular Photos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Photos": {
+      "type": "string"
+    },
+    "Popular": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Photographer": {
+      "type": "enumeration",
+      "enum": [
+        "Verified",
+        "Undiscovered",
+        "All"
+      ]
+    },
+    "Image": {
+      "displayName": "Images",
+      "type": "component",
+      "repeatable": true,
+      "component": "image.images"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Macro",
+        "Nature",
+        "City",
+        "Abstract",
+        "Concert",
+        "Food",
+        "Fashion",
+        "Animal",
+        "Black and White",
+        "Sport",
+        "Night"
+      ]
+    }
+  }
+}

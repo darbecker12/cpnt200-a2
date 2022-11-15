@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "photographers",
+  "info": {
+    "singularName": "photographer",
+    "pluralName": "photographers",
+    "displayName": "Photographer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "popular_photos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::popular-photo.popular-photo"
+    },
+    "upcomings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::upcoming.upcoming"
+    }
+  }
+}
